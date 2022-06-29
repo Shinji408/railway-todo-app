@@ -1,0 +1,67 @@
+@charset "utf-8";
+$text-color: #ff3333;
+$buttom-width: 80px;
+$buttom-height: 40px;
+
+.edit-list {
+  width: 1000px;
+  margin: 0 auto;
+
+  &-form {
+    color: #555555;
+  }
+  &-title {
+    width: 300px;
+    margin-bottom: 25px;
+  }
+  &-button {
+    background-color: #242f9b;
+    color: #ffffff;
+    width: $buttom-width;
+    height: $buttom-height;
+    border-radius: 5px;
+  }
+}
+
+.delete-list-button {
+  color: $text-color;
+  border: solid 1px #ff3333;
+  width: $buttom-width;
+  height: $buttom-height;
+  margin: 25px 5px;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: $text-color;
+}
+
+/*　画面サイズが320pxからはここを読み込む　*/
+@media screen and (min-width:320px) {
+  .edit-list {
+   width: 80%;
+   margin: 0 auto;
+ }
+  
+ }
+  
+ /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+ @media screen and (min-width:768px) and ( max-width:1024px) {
+   .edit-list {
+     width: 70%;
+     margin: 0 auto;
+     &-title {
+      width: 500px;
+      margin-bottom: 25px;
+    }
+   }
+ }
+  
+  
+ /*　画面サイズが1024pxからはここを読み込む　*/
+ @media screen and (min-width:1024px) {
+   .edit-list {
+     width: 1000px;
+     margin: 0 auto;
+   }
+ }

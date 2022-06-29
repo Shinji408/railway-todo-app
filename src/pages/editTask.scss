@@ -1,0 +1,77 @@
+@charset "utf-8";
+$text-color: #ff3333;
+$button-width: 80px;
+$button-height: 40px;
+
+.edit-task {
+  // width: 1000px;
+  // margin: 0 auto;
+
+  &-form {
+    color: #555555;
+  }
+
+  &-title,
+  &-detail {
+    width: 300px;
+    margin-bottom: 25px;
+  }
+
+  &-button {
+    background-color: #242f9b;
+    color: #ffffff;
+    width: $button-width;
+    height: $button-height;
+    border-radius: 5px;
+  }
+
+  &-date,
+  &-time {
+    margin: 25px 5px;
+  }
+}
+
+.delete-task-button {
+  color: $text-color;
+  border: solid 1px #ff3333;
+  width: $button-width;
+  height: $button-height;
+  margin: 25px 5px;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: $text-color;
+}
+
+/*　画面サイズが320pxからはここを読み込む　*/
+@media screen and (min-width:320px) {
+  .edit-task {
+   width: 80%;
+   margin: 0 auto;
+ }
+  
+ }
+  
+ /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+ @media screen and (min-width:768px) and ( max-width:1024px) {
+   .edit-task {
+     width: 70%;
+     margin: 0 auto;
+     &-title,
+     &-detail {
+       width: 500px;
+       margin-bottom: 25px;
+     }
+   }
+
+ }
+  
+  
+ /*　画面サイズが1024pxからはここを読み込む　*/
+ @media screen and (min-width:1024px) {
+   .edit-task {
+     width: 1000px;
+     margin: 0 auto;
+   }
+ }
