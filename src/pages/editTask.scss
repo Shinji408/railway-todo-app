@@ -4,13 +4,8 @@ $button-width: 80px;
 $button-height: 40px;
 
 .edit-task {
-<<<<<<< HEAD
   // width: 1000px;
   // margin: 0 auto;
-=======
-  width: 1000px;
-  margin: 0 auto;
->>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
 
   &-form {
     color: #555555;
@@ -48,7 +43,6 @@ $button-height: 40px;
 .error-message {
   color: $text-color;
 }
-<<<<<<< HEAD
 
 /*　画面サイズが320pxからはここを読み込む　*/
 @media screen and (min-width:320px) {
@@ -81,5 +75,3 @@ $button-height: 40px;
      margin: 0 auto;
    }
  }
-=======
->>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
