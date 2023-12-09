@@ -3,6 +3,7 @@
     "browser": true,
     "es2021": true
   },
+<<<<<<< HEAD
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -10,10 +11,17 @@
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
+=======
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
+<<<<<<< HEAD
   "plugins": ["@typescript-eslint", "react"],
+=======
+  "plugins": ["react"],
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
   "rules": {}
 }

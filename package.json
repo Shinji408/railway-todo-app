@@ -3,20 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reach/tabs": "^0.18.0",
     "@reduxjs/toolkit": "^1.8.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.0",
     "axios": "^0.27.2",
+<<<<<<< HEAD
+=======
+    "electron": "^27.0.2",
+    "eslint-plugin-prettier": "^5.0.0",
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
     "react": "^18.2.0",
     "react-cookie": "^4.1.1",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.2",
+<<<<<<< HEAD
     "react-router-dom": "6",
+=======
+    "react-router-dom": "^6.14.2",
+    "react-tabs": "^6.0.2",
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
     "sass": "^1.64.0",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@typescript-eslint/eslint-plugin": "^6.1.0",
     "@typescript-eslint/parser": "^6.1.0",
     "eslint": "^8.45.0",
@@ -25,16 +37,31 @@
     "prettier": "3.0.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5"
+=======
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-functional": "^5.0.8",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-no-null": "^1.0.2",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "^3.0.0",
+    "react-scripts": "5.0.1"
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+<<<<<<< HEAD
     "lint": "eslint ./src/**/*.jsx",
     "lint:fix": "eslint --fix ./src/**/*.jsx",
     "format": "prettier --check ./src/**/*.jsx",
     "format:fix": "prettier --write ./src/**/*.jsx"
+=======
+    "lint": "npx eslint --fix ./src/**/*.jsx",
+    "format": "prettier --write ./src/**/*.jsx"
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
   },
   "eslintConfig": {
     "extends": [

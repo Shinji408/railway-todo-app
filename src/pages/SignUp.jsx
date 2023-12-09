@@ -15,7 +15,11 @@ export const SignUp = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
+<<<<<<< HEAD
   const [errorMessage, setErrorMessage] = useState();
+=======
+  const [errorMessage, setErrorMessge] = useState();
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
   const [cookies, setCookie, removeCookie] = useCookies(); // eslint-disable-line
   const handleEmailChange = (e) => setEmail(e.target.value);
   const handleNameChange = (e) => setName(e.target.value);
@@ -36,7 +40,11 @@ export const SignUp = () => {
         navigate("/");
       })
       .catch((err) => {
+<<<<<<< HEAD
         setErrorMessage(`サインアップに失敗しました。 ${err}`);
+=======
+        setErrorMessge(`サインアップに失敗しました。 ${err}`);
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
       });
 
     if (auth) return <Navigate to="/" replace />;

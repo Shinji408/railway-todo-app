@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useCookies } from "react-cookie";
 import axios from "axios";
+
 import { Header } from "../components/Header";
 import { url } from "../const";
 import "./home.scss";
@@ -69,9 +70,13 @@ const handleKeyPress = (e, listId) => {
       .catch((err) => {
         setErrorMessage(`タスクの取得に失敗しました。${err}`);
       });
+<<<<<<< HEAD
       
   };
   
+=======
+  };
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
 
   return (
     <div>
@@ -92,7 +97,9 @@ const handleKeyPress = (e, listId) => {
               </p>
             </div>
           </div>
+
           <ul className="list-tab">
+<<<<<<< HEAD
         {lists.map((list, key) => {
           const isActive = list.id === selectListId;
           return (
@@ -110,6 +117,24 @@ const handleKeyPress = (e, listId) => {
           );
         })}
       </ul>
+=======
+            {lists.map((list, key) => {
+              const isActive = list.id === selectListId;
+              return (
+                <li
+                  role="listbox"
+                  key={key}
+                  className={`list-tab-item ${isActive ? "active" : ""}`}
+                  onClick={() => handleSelectList(list.id)}
+                  aria-labelledby={list.id}
+                >
+                  {list.title}
+                </li>
+              );
+            })}
+          </ul>
+
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
           <div className="tasks">
             <div className="tasks-header">
               <h2>タスク一覧</h2>
@@ -124,6 +149,10 @@ const handleKeyPress = (e, listId) => {
                 <option value="done">完了</option>
               </select>
             </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
             <Tasks
               tasks={tasks}
               selectListId={selectListId}
@@ -143,7 +172,11 @@ const Tasks = (props) => {
     const timeDiff = new Date(target).getTime() - new Date().getTime();
     const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
     const hours = Math.floor(
+<<<<<<< HEAD
       (timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+=======
+      (timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
     );
     const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
     return "残り" + days + "日" + hours + "時間" + minutes + "分";
@@ -171,7 +204,11 @@ const Tasks = (props) => {
                   hour: "2-digit",
                   minute: "2-digit",
                 })}
+<<<<<<< HEAD
                 <br /><br />
+=======
+                <br />
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
                 {task.done ? "完了" : "未完了"}
               </Link>
             </li>
@@ -197,7 +234,11 @@ const Tasks = (props) => {
                 hour: "2-digit",
                 minute: "2-digit",
               })}
+<<<<<<< HEAD
               <br />
+=======
+              &nbsp;
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
               {remainingDays(task.limit)}
               <br />
               {task.done ? "完了" : "未完了"}

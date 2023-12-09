@@ -1,6 +1,11 @@
 @charset "utf-8";
 
 .new-task {
+<<<<<<< HEAD
+=======
+  width: 1000px;
+  margin: 0 auto;
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
   &-form {
     color: #555555;
   }
@@ -29,6 +34,7 @@
 .error-message {
   color: #ff3333;
 }
+<<<<<<< HEAD
 
 
 /*　画面サイズが320pxからはここを読み込む　*/
@@ -61,3 +67,5 @@
     margin: 0 auto;
   }
 }
+=======
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae

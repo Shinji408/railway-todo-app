@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+<<<<<<< HEAD
 // .signin {
 //   width: 500px;
 //   margin: 0 auto;
@@ -99,6 +100,8 @@
 
   /*　画面サイズが1024pxからはここを読み込む　*/
 @media screen and (min-width:1024px) {
+=======
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
 .signin {
   width: 500px;
   margin: 0 auto;
@@ -127,4 +130,9 @@
   margin-bottom: 25px;
 }
 
+<<<<<<< HEAD
+=======
+.error-message {
+  color: #ff3333;
+>>>>>>> f615aee0fae18c1a0d0688ac05a2b0fd9d80b3ae
 }
